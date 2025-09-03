@@ -552,15 +552,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-700 bg-slate-900 relative">
+    <footer class="border-t border-slate-700 bg-slate-900">
         <div class="container mx-auto px-6 py-8 text-center">
             <p class="text-gray-400">
                 © 2025 Jesus Ortiz. Built on Figma.com, VS-Code, and hosted on GitHub.
             </p>
-        </div>
-        <!-- Visit Counter: Bottom left -->
-        <div style="position: absolute; left: 1rem; bottom: 1rem;">
-            <span class="text-gray-400 text-sm">Visits: <span id="count">Loading...</span></span>
         </div>
     </footer>
 
@@ -583,15 +579,6 @@
                 folderIcon.classList.add('text-cyan-400');
             }
         }
-
-        // Visit counter script
-        document.addEventListener('DOMContentLoaded', function() {
-            const countSpan = document.getElementById('count');
-            let visitCount = localStorage.getItem('visitCount') || 0;
-            visitCount++;
-            localStorage.setItem('visitCount', visitCount);
-            countSpan.textContent = visitCount;
-        });
     </script>
 </body>
 </html>
